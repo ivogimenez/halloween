@@ -1,0 +1,104 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>352</x><y>308</y><w>286</w><h>209</h></coordinates><panel_attributes>Niño
+--
+- nombre: string
+- actitud: int
+- bolsaCaramelos: int
+--
++ asustar(adulto): void
++ cantidadCaramelos(): int
++ cantidadSustoTotal(): int
++ guardarCaramelos(cantCaramelos): void
++ niños(): [Niño]
++ comerCaramelos(cantCaramelos): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1023</x><y>308</y><w>286</w><h>110</h></coordinates><panel_attributes>/Estado/
+&lt;&lt;Interface&gt;&gt;
+--
+
+--
+/+ actitud(niño): Int/
+/+ comerCarmelos(niño, cantCaramelos): void/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>627</x><y>330</y><w>418</w><h>55</h></coordinates><panel_attributes>lt=&lt;-
+- estado
+m1=1</panel_attributes><additional_attributes>360;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1243</x><y>473</y><w>297</w><h>99</h></coordinates><panel_attributes>Sano
+--
+- descripcion: string
+--
++ actitud(niño): int
++ comerCarmelos(niño, cantCaramelos): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>473</y><w>308</w><h>99</h></coordinates><panel_attributes>Empachado
+--
+- descripcion: string
+--
++ actitud(niño): int
++ comerCarmelos(niño, cantCaramelos): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1001</x><y>594</y><w>308</w><h>99</h></coordinates><panel_attributes>EnCama
+--
+
+--
++ actitud(niño): int
++ comerCarmelos(niño, cantCaramelos): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>924</x><y>407</y><w>253</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>210;10;210;40;10;40;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1144</x><y>407</y><w>33</w><h>209</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>1144</x><y>407</y><w>275</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;40;230;40;230;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>825</x><y>0</y><w>209</w><h>121</h></coordinates><panel_attributes>Adulto
+--
+
+--
++ tolerancia(): int
++ asustarse(asustadores): int
++ puedeAsustarme(): void
++ caramelosOtorgados(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>726</x><y>176</y><w>187</w><h>99</h></coordinates><panel_attributes>Abuelo
+--
+
+--
++ puedeAsustarme(): void
++ caramelosOtorgados(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>946</x><y>176</y><w>187</w><h>99</h></coordinates><panel_attributes>AdultoNecio
+--
+
+--
++ puedeAsustarme(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>528</x><y>22</y><w>319</w><h>308</h></coordinates><panel_attributes>lt=&lt;-
+- niños
+m1=0..n</panel_attributes><additional_attributes>10;260;10;230;120;230;120;10;270;10</additional_attributes></element><element><id>Relation</id><coordinates><x>803</x><y>110</y><w>143</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;110;40;10;40;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>913</x><y>110</y><w>143</w><h>88</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;110;40;110;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>44</x><y>308</y><w>286</w><h>143</h></coordinates><panel_attributes>Legión
+--
+
+--
++ asustar(adulto): void
++ cantidadCaramelos(): int
++ cantidadSustoTotal(): int
++ guardarCaramelos(cantCaramelos): void
++ niños(): [Niño]</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>462</x><y>11</y><w>385</w><h>121</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>330;10;150;10;150;90;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>11</x><y>99</y><w>220</w><h>264</h></coordinates><panel_attributes>lt=&lt;-
+- miembros
+m1=2..n</panel_attributes><additional_attributes>180;10;10;10;10;220;30;220</additional_attributes></element><element><id>UMLClass</id><coordinates><x>209</x><y>55</y><w>264</w><h>165</h></coordinates><panel_attributes>/Asustador/
+&lt;&lt;Interface&gt;&gt;
+--
+
+--
+/+ asustar(adulto): void/
+/+ cantidadCaramelos(): int/
+/+ cantidadSustoTotal(): int/
+/+ guardarCaramelos(cantCaramelos): void/
+/+ niños(): [Niño]/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>319</x><y>209</y><w>198</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50;160;50;160;90</additional_attributes></element><element><id>Relation</id><coordinates><x>165</x><y>209</y><w>187</w><h>121</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>150;10;150;50;10;50;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>374</x><y>550</y><w>253</w><h>110</h></coordinates><panel_attributes>/Elemento/
+--
+
+--
+/+ cantidadSusto(niño): int/
+/+ tipoElemento(): string/
++ nombre(): string
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>726</y><w>308</w><h>99</h></coordinates><panel_attributes>Maquillaje
+--
+
+--
++ cantidadSusto(): int
++ nombre(): string
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>649</y><w>33</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80;10;60;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>649</y><w>374</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>320;10;320;40;10;40;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>341</x><y>726</y><w>308</w><h>99</h></coordinates><panel_attributes>TrajeTerrorifico
+--
+
+--
++ cantidadSusto(): int
++ nombre(): string
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>616</x><y>363</y><w>143</w><h>275</h></coordinates><panel_attributes>lt=&lt;-
+- disfraz
+m1=2</panel_attributes><additional_attributes>10;220;70;220;70;10;20;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>682</x><y>726</y><w>308</w><h>99</h></coordinates><panel_attributes>TrajeTierno
+--
+
+--
++ cantidadSusto(): int
++ nombre(): string
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>495</x><y>649</y><w>374</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;320;40;320;70</additional_attributes></element></diagram>
